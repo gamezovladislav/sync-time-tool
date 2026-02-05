@@ -2,6 +2,12 @@
 
 A simple room-based tool where multiple clients see the same countdown and hit **0** as simultaneously as possible using a small WebSocket coordinator.
 
+## Demo
+
+https://github.com/user-attachments/assets/2f101ff7-2e05-4883-a848-09a5c555827f
+
+
+
 ## Dev Note:
 This project is fully implemented with Chatgpt 5.2 Thinking (extended) in web UI to investigate the initial idea. <br>
 Imlementator: Junie CLI v.624.1 with Codex 5.2. 
@@ -21,8 +27,6 @@ Session Cost
  gpt-5-2025-08-07:        12053 tokens used, 1536 cached tokens, 0 cached tokens created, $0.0159   
 ```
 Initially this repo contained only file "reqs.md" and AI Agent was run with prompt `need to impleemnt the project using reueiremntes from @reqs.md`
-
-
 
 ## Quickstart
 
