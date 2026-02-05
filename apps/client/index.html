@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sync Timer</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <h1>Sync Timer</h1>
+        <span id="connection-status" class="status">disconnected</span>
+      </header>
+
+      <section class="panel">
+        <label>
+          Server URL
+          <input id="server-url" type="text" placeholder="ws://localhost:8080" />
+        </label>
+        <button id="connect">Connect</button>
+      </section>
+
+      <section class="panel">
+        <div class="room-actions">
+          <button id="create-room">Create room</button>
+          <input id="room-id" type="text" placeholder="room id" />
+          <button id="join-room">Join room</button>
+        </div>
+        <div class="share">
+          <span>Share link:</span>
+          <input id="share-link" type="text" readonly />
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="countdown" id="countdown">--</div>
+        <div class="controls">
+          <input id="delay-ms" type="number" min="3000" max="30000" step="500" value="5000" />
+          <button id="start">Start 5s</button>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

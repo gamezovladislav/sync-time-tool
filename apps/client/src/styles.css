@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  margin: 0;
+  padding: 24px;
+}
+
+#app {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #334155;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.status.connected {
+  background: #16a34a;
+}
+
+.status.reconnecting {
+  background: #f59e0b;
+}
+
+.status.disconnected {
+  background: #ef4444;
+}
+
+.panel {
+  background: #1e293b;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.room-actions {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 8px;
+}
+
+.share {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.countdown {
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+}

@@ -1,0 +1,13 @@
+# IDE
+.idea/
+.junie/
+*.iml
+
+# Dependencies
+node_modules/
+
+# Build output
+apps/*/dist/
+
+# Env
+.env
